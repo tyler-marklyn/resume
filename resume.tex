@@ -1,0 +1,163 @@
+% % % % % % % % % % % % % % % % % % %
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[cm]{fullpage} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+\addtolength{\voffset}{-0.5cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{center}
+{\Huge Tyler \textsc{Marklyn}\bigskip }% Your name
+
+\vspace{-5mm}
+340 E Foothill Blvd. Claremont, CA  $\ \cdot \ $
+ (206) 422 6452 $\ \cdot \ $ 
+\href{mailto:tmarklyn@hmc.edu}{tmarklyn@hmc.edu}
+\end{center}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl}	
+\emph{Current} & \textbf{Harvey Mudd College}, Claremont CA, Class of 2015\\
+& Joint Major in \textsc{Computer Science and Math}, Concentration in \textsc{Linguistics} \\
+%& \small Advisor: Prof. Geoff \textsc{Kuenning} (CS) and Prof. Talithia \textsc{Williams} (Math)\\
+& Dean's List, Major \textsc{Gpa}: 3.72/4.00, Overall \textsc{Gpa}: 3.67/4.00\\
+
+%------------------------------------------------
+
+\textsc{June} 2011& \textbf{The Northwest School}, Seattle, WA | Final GPA: 3.96/4.00
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{14.5cm}}
+Sep 2012-Present & {\bf Computer Science Grader/Tutor at {\sc Harvey Mudd College}} \\
+& Grader/Tutor for a number of courses, including: Principles of Computer Science, Data Structures and Program Development, Computer Systems and Computability and Logic.\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+Jan 2013-Present & {\bf Student Email List Moderator at {\sc Harvey Mudd College}} \\
+& Make sure that the antiquated student mailing list system at Harvey Mudd continues to function. Read, edit and forward emails from the command line.\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Jun 2013-Aug 2013} & {\bf Editorial Assistant for {\sc Harvey Mudd College}}\\
+& Populated the database of HMC articles in \href{scholarship.claremont.edu}{Scholarship@Claremont}. Contacted publishers for permission to redistribute work by faculty members. Uploaded 223 articles: as much as the previous four summer employees combined.\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Jan 2013-May 2013} & {\bf Mathematics Head Grader at {\sc Harvey Mudd College}}\\
+& Head grader for Introduction to Linear Algebra and Introduction to Differential Equations.\\
+\multicolumn{2}{c}{}\\
+
+%------------------------------------------------
+
+\textsc{Oct 2011-May 2012} & {\bf Computer Science Dept. Consultant at {\sc Harvey Mudd College}}\\
+& Made sure everything runs smoothly in the computer science labs.
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills}
+
+\begin{tabular}{r p{14cm}}
+Basic Knowledge: & \textsc{prolog}, \textsc{scheme}, \textsc{unix}, Mathematica, \textsc{postscript},  Adobe Photoshop, Adobe Illustrator \\
+
+Intermediate Knowledge: & \textsc{C++}, \textsc{python}, \textsc{matlab}, \textsc{Java}, \textsc{C}, \textsc{haskell}, \textsc{erlang}, Excel, Word, PowerPoint, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular} \\
+
+Practice in: & Data Structures, Distributed Systems, Programming Languages, Functional Design, Object Oriented Design, Computer Systems, Computability Theory, Complexity Analysis
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+\section{Extracurricular Activities}
+
+Gaming Club Treasurer \hfill 2013-present \\
+Member of Committee for Activities Planning \hfill 2013, 2014-present \\
+ACM International Collegiate Programming Contest Regional Finalist \hfill 2013 \\
+Intramural League of Legends Team Captain \hfill 2013-2014 \\
+Freshman Orientation Sponsor \hfill 2013 \\
+Board Games Club Co-President \hfill 2012-2013
+
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\textsc{English:} Fluent \hfill \textsc{Italian:} Fluent \hfill 
+\textsc{Spanish:} Fully able to converse \hfill \textsc{French:} Basic Knowledge
+
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Interests and Activities}
+
+Technology, Data Structures, Video Games, Distributed Algorithms, Programming Language Creation \\
+Linguistics of Natural Languages, and their relation to programming languages \\
+Magic: the Gathering, Baseball, League of Legends, Juggling, Any Seattle-based sports team
+
+%----------------------------------------------------------------------------------------
+
+
+
+\end{document}
