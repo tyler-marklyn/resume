@@ -8,6 +8,8 @@
 % The main document font is called Fontin and can be downloaded for free
 % from here: http://www.exljbris.com/fontin.html
 %
+% This is Tyler Marklyn's edit of the original resume template
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
@@ -24,7 +26,7 @@
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 
-\usepackage[cm]{fullpage} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+\usepackage[cm]{fullpage} % Margin formatting for 8.5" x 11" in paper. Use other package for A4
 \addtolength{\voffset}{-0.5cm}
 
 \usepackage{hyperref} % Required for adding links	and customizing them
@@ -34,6 +36,16 @@
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+%---------------------------------------------------------------------------------------
+%    SOME HELPFUL COMMANDS
+%---------------------------------------------------------------------------------------
+
+\newcommand{\work}[3]{ \textsc{#1} & \textbf{#2} \\
+& #3\\
+\multicolumn{2}{c}{} \\}
+
+% -------------------- DOCUMENT START --------------------------------------------------
 
 \begin{document}
 
@@ -48,7 +60,7 @@
 {\Huge Tyler \textsc{Marklyn}\bigskip }% Your name
 
 \vspace{-5mm}
-340 E Foothill Blvd. Claremont, CA  $\ \cdot \ $
+2322 E Aloha St. Seattle, WA  $\ \cdot \ $
  (206) 422 6452 $\ \cdot \ $ 
 \href{mailto:tmarklyn@hmc.edu}{tmarklyn@hmc.edu}
 \end{center}
@@ -57,14 +69,15 @@
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-
+\vspace{-0.5mm} % Buys a tiny bit of space, but it's worth an extra line of text
 \section{Education}
 
-\begin{tabular}{rl}	
-\emph{Current} & \textbf{Harvey Mudd College}, Claremont CA, Class of 2015\\
+\begin{tabular}{rl}	% DON'T TOUCH THE TABULAR COMMANDS (unless you know what you're doing)
+
+\textsc{May} 2015 & \textbf{Harvey Mudd College}, Claremont CA, Class of 2015\\
 & Joint Major in \textsc{Computer Science and Math}, Concentration in \textsc{Linguistics} \\
-%& \small Advisor: Prof. Geoff \textsc{Kuenning} (CS) and Prof. Talithia \textsc{Williams} (Math)\\
-& Dean's List, Major \textsc{Gpa}: 3.72/4.00, Overall \textsc{Gpa}: 3.67/4.00\\
+%& \small Advisor: Prof. Geoff \textsc{Kuenning} (CS) and Prof. Talithia \textsc{Williams} (Math)\\ % (optional)
+& Dean's List, \textsc{Gpa}: 3.62/4.00  \\%, Major \textsc{Gpa}: 3.61/4.00\\
 
 %------------------------------------------------
 
@@ -77,52 +90,61 @@
 
 \section{Work Experience}
 
-\begin{tabular}{r|p{14.5cm}}
-Sep 2012-Present & {\bf Computer Science Grader/Tutor at {\sc Harvey Mudd College}} \\
-& Grader/Tutor for a number of courses, including: Principles of Computer Science, Data Structures and Program Development, Computer Systems and Computability and Logic.\\
-\multicolumn{2}{c}{} \\
+\begin{tabular}{r|p{14.5cm}} % DON'T TOUCH THE TABULAR COMMANDS (this will break the \work command if modified)
+
+% Work commands look like this:
+% \work{ <time you worked this job> }{ <job title> }{
+%      <short description of where you worked/what you did>
+% }
+
+\work{May 2014-Aug 2014}{Software Engineering Intern at \textsc{Intentional Software}}{
+	Worked on a number of projects including: creation of a color picker, modification of the ticket system, and
+	leading a team of interns on a massive widget refactor.
+}
 
 %------------------------------------------------
 
-Jan 2013-Present & {\bf Student Email List Moderator at {\sc Harvey Mudd College}} \\
-& Make sure that the antiquated student mailing list system at Harvey Mudd continues to function. Read, edit and forward emails from the command line.\\
-\multicolumn{2}{c}{} \\
+\work{Sep 2012-May 2015}{Computer Science Grader/Tutor at \textsc{Harvey Mudd College}}{
+	Grader/Tutor for a number of courses, including: Data Structures and Program Development, Computer Systems, Computability and Logic, and Programming Languages.
+}
 
 %------------------------------------------------
 
-\textsc{Jun 2013-Aug 2013} & {\bf Editorial Assistant for {\sc Harvey Mudd College}}\\
-& Populated the database of HMC articles in \href{scholarship.claremont.edu}{Scholarship@Claremont}. Contacted publishers for permission to redistribute work by faculty members. Uploaded 223 articles: as much as the previous four summer employees combined.\\
-\multicolumn{2}{c}{} \\
+\work{Jan 2013-May 2014}{Student Email List Moderator at \textsc{Harvey Mudd College}}{
+	Make sure that the antiquated student mailing list system at Harvey Mudd continues to function. Read, edit and forward emails from the command line.
+}
 
 %------------------------------------------------
 
-\textsc{Jan 2013-May 2013} & {\bf Mathematics Head Grader at {\sc Harvey Mudd College}}\\
-& Head grader for Introduction to Linear Algebra and Introduction to Differential Equations.\\
-\multicolumn{2}{c}{}\\
+\work{Jun 2013-Aug 2013}{Editorial Assistant for \textsc{Harvey Mudd College}}{
+	Populated the database of HMC articles in \href{scholarship.claremont.edu}{Scholarship@Claremont}. Contacted publishers for permission to redistribute work by faculty members.
+}
 
 %------------------------------------------------
 
-\textsc{Oct 2011-May 2012} & {\bf Computer Science Dept. Consultant at {\sc Harvey Mudd College}}\\
-& Made sure everything runs smoothly in the computer science labs.
+\work{Jan 2013-May 2013}{Mathematics Head Grader at \textsc{Harvey Mudd College}}{
+	Head grader for Introduction to Linear Algebra and Introduction to Differential Equations.
+}
+
 \end{tabular}
-
+\vspace{-3mm} % This is a byproduct of how I set up the \work commands.
 
 %----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS 
+%	COMPUTER SKILLS (from here on out, feel free to change section headers)
 %----------------------------------------------------------------------------------------
 
 \section{Computer Skills}
 
 \begin{tabular}{r p{14cm}}
-Basic Knowledge: & \textsc{prolog}, \textsc{scheme}, \textsc{unix}, Mathematica, \textsc{postscript},  Adobe Photoshop, Adobe Illustrator \\
+Basic Knowledge: & \textsc{prolog}, \textsc{scheme}, \textsc{unix}, Mathematica, \textsc{postscript}, \textsc{c}, \textsc{haskell} \\
 
-Intermediate Knowledge: & \textsc{C++}, \textsc{python}, \textsc{matlab}, \textsc{Java}, \textsc{C}, \textsc{haskell}, \textsc{erlang}, Excel, Word, PowerPoint, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular} \\
+Intermediate Knowledge: & \textsc{C\#}, \textsc{C++}, \textsc{Cuda}, \textsc{python}, \textsc{matlab}, \textsc{Java}, \textsc{erlang}, Excel, PowerPoint, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular} \\
 
 Practice in: & Data Structures, Distributed Systems, Programming Languages, Functional Design, Object Oriented Design, Computer Systems, Computability Theory, Complexity Analysis
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
-%	SCHOLARSHIPS AND ADDITIONAL INFO
+%	ADDITIONAL INFO
 %----------------------------------------------------------------------------------------
 \section{Extracurricular Activities}
 
