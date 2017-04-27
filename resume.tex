@@ -37,6 +37,8 @@
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
+\usepackage[super]{nth} % Used to do numbering with superscripts
+
 %---------------------------------------------------------------------------------------
 %    SOME HELPFUL COMMANDS
 %---------------------------------------------------------------------------------------
@@ -60,9 +62,9 @@
 {\Huge Tyler \textsc{Marklyn}\bigskip }% Your name
 
 \vspace{-5mm}
-2322 E Aloha St. Seattle, WA  $\ \cdot \ $
+1727 14th Ave Apt 100, Seattle WA  $\ \cdot \ $
  (206) 422 6452 $\ \cdot \ $ 
-\href{mailto:tmarklyn@hmc.edu}{tmarklyn@hmc.edu}
+\href{mailto:tyler@marklyn.com}{tyler@marklyn.com}
 \end{center}
 
 
@@ -74,14 +76,14 @@
 
 \begin{tabular}{rl}	% DON'T TOUCH THE TABULAR COMMANDS (unless you know what you're doing)
 
-\textsc{May} 2015 & \textbf{Harvey Mudd College}, Claremont CA, Class of 2015\\
+\textsc{May} 2015 & \textbf{Harvey Mudd College}, Claremont CA\\
 & Joint Major in \textsc{Computer Science and Math}, Concentration in \textsc{Linguistics} \\
 %& \small Advisor: Prof. Geoff \textsc{Kuenning} (CS) and Prof. Talithia \textsc{Williams} (Math)\\ % (optional)
-& Dean's List, \textsc{Gpa}: 3.62/4.00  \\%, Major \textsc{Gpa}: 3.61/4.00\\
+& Dean's List, Final \textsc{gpa}: 3.62/4.00  \\%, Major \textsc{Gpa}: 3.61/4.00\\
 
 %------------------------------------------------
 
-\textsc{June} 2011& \textbf{The Northwest School}, Seattle, WA | Final GPA: 3.96/4.00
+\textsc{June} 2011& \textbf{The Northwest School}, Seattle, WA | Final \textsc{gpa}: 3.96/4.00
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -96,6 +98,19 @@
 % \work{ <time you worked this job> }{ <job title> }{
 %      <short description of where you worked/what you did>
 % }
+
+%------------------------------------------------
+
+\work{Aug 2015-present}{Software Developer \& Analyst at \textsc{Intentional Software}}{
+  Work primarily on implementation of an incremental computation based layout engine. The engine allows application developers on the Intentional Programming
+  platform to use our Layout meta-language to create performant applications that can automatically performantly update visuals. 
+
+  Worked on creating
+  the API to allow application developers to extend the Layout Engine with their own custom visuals and animations, while still automatically providing incremental
+  computation.
+}
+
+%------------------------------------------------
 
 \work{May 2014-Aug 2014}{Software Engineering Intern at \textsc{Intentional Software}}{
 	Worked on a number of projects including: creation of a color picker, modification of the ticket system, and
@@ -116,12 +131,6 @@
 
 %------------------------------------------------
 
-\work{Jun 2013-Aug 2013}{Editorial Assistant for \textsc{Harvey Mudd College}}{
-	Populated the database of HMC articles in \href{scholarship.claremont.edu}{Scholarship@Claremont}. Contacted publishers for permission to redistribute work by faculty members.
-}
-
-%------------------------------------------------
-
 \work{Jan 2013-May 2013}{Mathematics Head Grader at \textsc{Harvey Mudd College}}{
 	Head grader for Introduction to Linear Algebra and Introduction to Differential Equations.
 }
@@ -136,25 +145,33 @@
 \section{Computer Skills}
 
 \begin{tabular}{r p{14cm}}
-Basic Knowledge: & \textsc{prolog}, \textsc{scheme}, \textsc{unix}, Mathematica, \textsc{postscript}, \textsc{c}, \textsc{haskell} \\
+Basic Knowledge: & \textsc{erlang}, \textsc{scheme}, \textsc{unix}, Mathematica, textsc{c}, \textsc{haskell}, \textsc{Cuda} \\
 
-Intermediate Knowledge: & \textsc{C\#}, \textsc{C++}, \textsc{Cuda}, \textsc{python}, \textsc{matlab}, \textsc{Java}, \textsc{erlang}, Excel, PowerPoint, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular} \\
+Intermediate Knowledge: & \textsc{C\#}, \textsc{C++}, \textsc{python}, \textsc{matlab}, \textsc{Java}, Excel,  
+{\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular} \\
 
-Practice in: & Data Structures, Distributed Systems, Programming Languages, Functional Design, Object Oriented Design, Computer Systems, Computability Theory, Complexity Analysis
+Practice in: & Incremental Computation, Data Structures, Distributed Systems, Programming Languages, Functional Design,
+  Object Oriented Design, Computer Systems%, Computability Theory, Complexity Analysis
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
 %	ADDITIONAL INFO
 %----------------------------------------------------------------------------------------
-\section{Extracurricular Activities}
+%\section{Personal Activities}
 
-Gaming Club Treasurer \hfill 2013-present \\
-Member of Committee for Activities Planning \hfill 2013, 2014-present \\
-ACM International Collegiate Programming Contest Regional Finalist \hfill 2013 \\
-Intramural League of Legends Team Captain \hfill 2013-2014 \\
-Freshman Orientation Sponsor \hfill 2013 \\
-Board Games Club Co-President \hfill 2012-2013
+%Competitive Magic: the Gathering player. Recent top finishes include
+%\begin{itemize}
+%  \item \nth{9} out of 557 at Grand Prix San Antonio 2017
+%  \item \nth{47} out of 1549 at Grand Prix Vancouver 2017
+%\end{itemize}
 
+%Currently developing a Domain Specific Language to specify a set and deck of cards, and provide analysis of 
+%the likelihood of specific outcomes in a game.
+
+%2012-2015 \hfill HMC Board Games Club Treasurer and Co-President \\
+%2013-2015 \hfill HMC Member of Committee for Activities Planning \\
+%2013 \hfill ACM International Collegiate Programming Contest Regional Finalist \\
+%2013-2015 \hfill HMC Intramural League of Legends Team Captain
 
 
 %----------------------------------------------------------------------------------------
@@ -174,9 +191,12 @@ Board Games Club Co-President \hfill 2012-2013
 
 \section{Interests and Activities}
 
-Technology, Data Structures, Video Games, Distributed Algorithms, Programming Language Creation \\
-Linguistics of Natural Languages, and their relation to programming languages \\
-Magic: the Gathering, Baseball, League of Legends, Juggling, Any Seattle-based sports team
+Incremental Computation, Data Visualization, Data Structures, Distributed Algorithms, Domain Specific Languages,
+Programming Language Creation
+
+Video Games, Linguistics of Natural Languages, and their relation to programming languages
+
+Competitive Magic: the Gathering, Baseball, Football, Juggling, Any Seattle-based sports team
 
 %----------------------------------------------------------------------------------------
 
