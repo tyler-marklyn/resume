@@ -47,6 +47,9 @@
 & #3\\
 \multicolumn{2}{c}{} \\}
 
+% Like work, but is not rendered, only saved in the tex file for future reference
+\newcommand{\oldwork}[3]{}
+
 % -------------------- DOCUMENT START --------------------------------------------------
 
 \begin{document}
@@ -62,7 +65,7 @@
 {\Huge Tyler \textsc{Marklyn}\bigskip }% Your name
 
 \vspace{-5mm}
-412 11th Ave Apt 102, Seattle WA  $\ \cdot \ $
+14254 SE 40th St, Bellevue WA, 98006  $\ \cdot \ $
  (206) 422 6452 $\ \cdot \ $ 
 \href{mailto:tyler@marklyn.com}{tyler@marklyn.com}
 \end{center}
@@ -99,26 +102,33 @@
 %      <short description of where you worked/what you did>
 % }
 
-\work{May 2017-present}{Software Engineer 2 at \textsc{Microsoft}}{
-  Continue work on the Intentional Layout Engine after Microsoft acquisition. Special focus on improving cross-platform performance of the layout engine as we ship Microsoft Whiteboard
+\work{March 2019-present}{Software Engineer 2 at \textsc{Microsoft}}{
+  Transition within the Whiteboard team at Microsoft to focus on development of a web-based implementation of the Intentional Programming Platform, with the eventual goal of creating an open-source application development framework.
+
+  Currently, lead team that works closely with application developers using the framework to improve and refine our published APIs and Features to be more ergonomic, allowing for faster development of high-impact applications.
+}
+
+%------------------------------------------------
+
+\work{May 2017-March 2019}{Software Engineer 2 at \textsc{Microsoft}}{
+  Continued work on the Intentional Layout Engine after Microsoft acquisition. Special focus on improving performance of the layout engine as we shipped Microsoft Whiteboard
   for Surface Hub, Desktop, and Mobile. Expand the Layout API to better support multithreaded and deferred work across rendering frames.
 }
 
 %------------------------------------------------
 
 \work{Aug 2015-May 2017}{Software Developer \& Analyst at \textsc{Intentional Software}}{
-  Worked primarily on implementation of an incremental computation based layout engine. The engine allows application developers on the Intentional Programming
+  Worked primarily on implementation of an incremental-computation based layout engine. The engine allows application developers on the Intentional Programming
   platform to use our Layout DSL to create performant applications that can automatically performantly update visuals. 
 
-  Worked on creating
-  the API to allow application developers to extend the Layout Engine with their own custom visuals and animations, while still automatically providing incremental
+  Worked on API to allow application developers to extend the Layout Engine with their own custom visuals and animations, while still automatically providing incremental
   computation.
 }
 
 %------------------------------------------------
 
 \work{May 2014-Aug 2014}{Software Engineering Intern at \textsc{Intentional Software}}{
-	Worked on a number of projects including: creation of a color picker, modification of the ticket system, and
+	Worked on a number of projects including: creation of a color picker widget, modification of the ticket system, and
 	leading a team of interns on a massive widget refactor.
 }
 
@@ -128,9 +138,9 @@
 	Grader/Tutor for a number of courses, including: Data Structures and Program Development, Computer Systems, Computability and Logic, and Programming Languages.
 }
 
-%------------------------------------------------
+%------------------ OLD WORK ------------------------------
 
-\work{Jan 2013-May 2013}{Mathematics Head Grader at \textsc{Harvey Mudd College}}{
+\oldwork{Jan 2013-May 2013}{Mathematics Head Grader at \textsc{Harvey Mudd College}}{
 	Head grader for Introduction to Linear Algebra and Introduction to Differential Equations.
 }
 
@@ -138,19 +148,19 @@
 \vspace{-3mm} % This is a byproduct of how I set up the \work commands.
 
 %----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS (from here on out, feel free to change section headers)
+%	TECHNICAL SKILLS (from here on out, feel free to change section headers)
 %----------------------------------------------------------------------------------------
 
-\section{Computer Skills}
+\section{Technical Skills}
 
 \begin{tabular}{r p{14cm}}
-Basic Knowledge: & \textsc{erlang}, \textsc{scheme}, \textsc{unix}, Mathematica, textsc{c}, \textsc{haskell}, \textsc{Cuda} \\
+Basic Knowledge: & \textsc{JavaScript}, \textsc{erlang}, \textsc{scheme}, \textsc{unix}, Mathematica, \textsc{C}, \textsc{haskell}, \textsc{matlab} \\
 
-Intermediate Knowledge: & \textsc{C\#}, \textsc{C++}, \textsc{python}, \textsc{matlab}, \textsc{Java}, Excel,  
+Intermediate Knowledge: & \textsc{TypeScript}, \textsc{C\#}, \textsc{C++}, \textsc{python}, \textsc{Java}, Excel,  
 {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular} \\
 
-Practice in: & Incremental Computation, Distributed Systems, Programming Languages, Functional Design,
-  Data Structure \& Object Oriented Design, Computer Systems%, Computability Theory, Complexity Analysis
+Practice in: & Incremental Computation, Computation Platform Creation \& API Design, Distributed Systems, Programming Language Design, 
+  Data Structures %, Computability Theory, Complexity Analysis, Functional Design, Object Oriented Design, Computer Systems
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -177,7 +187,7 @@ Practice in: & Incremental Computation, Distributed Systems, Programming Languag
 %	LANGUAGES
 %----------------------------------------------------------------------------------------
 
-\section{Languages}
+\section{Natural Languages}
 
 \textsc{English:} Fluent \hfill \textsc{Italian:} Fluent \hfill 
 \textsc{Spanish:} Fully able to converse \hfill \textsc{French:} Basic Knowledge
@@ -190,10 +200,9 @@ Practice in: & Incremental Computation, Distributed Systems, Programming Languag
 
 \section{Interests and Activities}
 
-Incremental Computation, Data Visualization, Data Structures, Distributed Algorithms, Domain Specific Languages
-%, Programming Language Creation
+\textsc{Technical:} Incremental Computation, Data Visualization, Data Structures, Distributed Algorithms, Domain Specific Languages, Programming Language Creation
 
-Video Games, Linguistics of Natural Languages and their relation to programming languages, Competitive Magic: the Gathering, 
+\textsc{Non-Technical:} Board Games, Video Games, Linguistics of natural languages and their relation to programming languages, Competitive Magic: the Gathering, 
 Baseball, Football, Juggling, Any Seattle-based sports team
 
 %----------------------------------------------------------------------------------------
